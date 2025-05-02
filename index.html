@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usability Hub</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
             <a href="#" class="company-logo">
                 <img src="./assets/asset 0.png" alt="company logo">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customers</a></li>
@@ -33,6 +34,7 @@
                     <li><a href="#" class="hover-link primary-btn">Sign up</a> </li>
                 </ul>
             </div>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
         </div>
     </nav>
 
@@ -80,7 +82,7 @@
                     <h2>Your user research Swiss Army knife</h2>
                     <a href="#" class="feature-link">
                         <span class="secondary-btn">
-                            See al features
+                            See all features
                             <i class="fa-solid fa-arrow-right-long"></i>
                         </span>
                     </a>
@@ -172,16 +174,16 @@
             </div>
         </section>
         <section class="big-feauture-section">
-            <div class="container flex big-feauture-container">
+            <div class="container flex big-feauture-container" id="second-big-feature">
+                <div class="feature-img">
+                    <img src="./assets/asset 20.png" alt="">
+                </div>
                 <div class="feature-desc">
                     <h4>Effortless validation for</h4>
                     <h3>Design Professionals </h3>
                     <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and
                         delightful
                         experiences for your users.</p>
-                </div>
-                <div class="feature-img">
-                    <img src="./assets/asset 20.png" alt="">
                 </div>
             </div>
         </section>
@@ -220,10 +222,10 @@
                         <h3 class="card-text">Can users find important pages on my website?</h3>
                     </a>
                     <a href="#" class="examples-card">
-                        <h3 class="card-text">is my website's intended audience clear?</h3>
+                        <h3 class="card-text">Is my website's intended audience clear?</h3>
                     </a>
                     <a href="#" class="examples-card">
-                        <h3 class="card-text">Do vistitors understand what a page is about?</h3>
+                        <h3 class="card-text">Do visitors understand what a page is about?</h3>
                     </a>
                 </div>
             </div>
@@ -234,7 +236,7 @@
             <div class="container flex cta-section-container">
                 <h3>Start testing today</h3>
                 <p>Take the guesswork out of design decisions</p>
-                <a href="#" class="primary-btn">Get Started</a>
+                <a href="#" class="primary-btn get-started-btn">Get Started</a>
             </div>
         </section>
     </main>
@@ -282,8 +284,9 @@
             <a href="#" class="hover-link"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </div>
-
+    
     <script src="https://kit.fontawesome.com/4c95ae23e7.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

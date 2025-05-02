@@ -19,6 +19,7 @@
 html {
     font-size: 62.5%;
     /* 1rem = 10px */
+
 }
 
 body {
@@ -27,15 +28,15 @@ body {
 }
 
 h1 {
-    font-size: 4.8rem;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
 }
 
 h4 {
@@ -46,7 +47,7 @@ h4 {
 p {
     font-size: 2rem;
     font-family: "Roboto", sans-serif;
-    line-height: 1.8rem;
+    line-height: 2.5rem;
     color: var(--secondary-text-color);
 }
 
@@ -67,9 +68,10 @@ ul {
 }
 
 .container {
-    max-width: 1150px;
+    max-width: 1180px;
     margin-inline: auto;
     padding-inline: var(--padding-inline-section);
+    overflow: hidden;
 }
 
 .flex {
@@ -94,12 +96,14 @@ ul {
 /* top-nav */
 
 .main-nav {
+    position: relative;
     margin-top: 10px;
     justify-content: space-between;
 }
 
 .company-logo img {
     width: 200px;
+    margin-right: 10px;
 }
 
 .nav-links {
@@ -122,7 +126,6 @@ ul {
 }
 
 .secondary-btn {
-    background-color: transparent;
     border-radius: 5px;
     border: 1px solid black;
     padding: 10px 24px;
@@ -146,6 +149,11 @@ ul {
     border-color: var(--accent-color-dark);
 }
 
+.nav-toggle {
+    display: none;
+    font-size: 2.1rem;
+}
+
 /* header-section */
 
 header {
@@ -158,20 +166,26 @@ header {
 }
 
 .header-left {
-    max-width: 39vw;
-    /* max-width change ki mene 40vw se 39vw */
+    max-width: 40vw;
 }
 
 .header-left h1 {
     margin-top: 20px;
 }
 
-.header-left .get-started-btn {
+.header-left {
     margin-top: 20px;
 }
 
+.get-started-btn {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    transition: 0.26s ease-in-out;
+}
+
 .header-right img {
-    width: 550px;
+    width: 100%;
 }
 
 /* companies-section */
@@ -182,8 +196,9 @@ header {
 }
 
 .logos {
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .logo {
@@ -213,14 +228,16 @@ header {
 .features-area {
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 40px;
-    margin-top: 50px;
+    gap: 30px;
+    /* margin-top: 30px; */
+    padding: 50px 0;
 }
 
 .feature-card {
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     max-width: 30%;
+    text-align: center;
 }
 
 .feature-card img {
@@ -237,26 +254,37 @@ header {
     gap: 40px;
 }
 
+
+#second-big-feature {
+    flex-direction: row-reverse;
+}
+
 .feature-img img {
     width: 100%;
 }
 
 /* examples-section */
 
+.examples-section {
+    padding: 80px var(--padding-inline-section) 0;
+}
+
 .examples-header {
     flex-direction: column;
     gap: 20px;
+    text-align: center;
 }
 
 .examples-area {
     justify-content: space-between;
     margin-block: 30px;
+    flex-wrap: wrap;
 }
 
 .examples-card {
     position: relative;
     width: 23%;
-    min-height: 300px;
+    height: 300px;
     background: black;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('./assets/asset\ 32.jpeg');
     background-size: cover;
@@ -301,6 +329,7 @@ header {
     flex-direction: column;
     gap: 30px;
     color: white;
+    text-align: center;
 }
 
 .cta-section-container p {
@@ -317,6 +346,7 @@ footer {
 
 .footer-container {
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .link-column {
@@ -336,4 +366,5 @@ footer {
 .sub-footer-container {
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
